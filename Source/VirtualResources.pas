@@ -55,6 +55,7 @@ const
   WM_CHANGENOTIFY_CUSTOM = WM_VETBASE + 9;
   WM_UPDATESCROLLBAR = WM_VETBASE + 10;       // Signal TDropDownWnd to update scrollbar
   WM_VTSETTHREADMARK = WM_VETBASE + 11;
+  WM_FOLDERCHANGENOTIFY = WM_VETBASE + 11;
 
 // <FR changes 2005-11-09>
 // Const were changed to var of string type, to allow customization
@@ -109,10 +110,6 @@ var
   STR_COLUMNDLG_CHECKBOXLIVEUPDATE : string = 'LiveUpdate';
   STR_COLUMNDLG_BUTTONOK     : string = 'OK';
   STR_COLUMNDLG_BUTTONCANCEL : string = 'Cancel';
-  // The following is not a string, but I find useful to be able to change
-  // the checkboxes style, so I've added another variable to manage it.
-  COLUMNDLG_CHKSTYLE : TCheckImageKind = ckSystemDefault;
-  // </ FR added 11-28-05>
 
     // Error given when the root of VET is set to a path that does not exist.  The
   // end user should never see this message.
